@@ -2,10 +2,31 @@ import java.util.Scanner;
 
 public class EmployeeSalary {
     public static void main(String[] args) {
-        for(int i=1; i<=8; i++){
-        System.out.print("Enter the name:  " + i );
         Scanner input = new Scanner(System.in);
-        String name = input.next();
+        for(int i=1; i<=8; i++){
+        System.out.print("Enter the salary of employee " + i + " : " );
+        double salary = input.nextDouble();
+
+        double bonusRate;
+        if(salary < 20000){
+            bonusRate= 0.20;
+        }
+        else if(salary < 40000){
+            bonusRate = 0.15;
+        }
+        else if(salary < 60000){
+            bonusRate=0.10;
+        }
+        else{
+            bonusRate=0.05;
+        }
+
+        double bonus= salary * bonusRate;
+        double totalSalary = salary +bonus;
+
+        System.out.println("Salary : Rs. " + salary);
+        System.out.println("Bonus Amount : Rs. " + bonus);
+        System.out.println("Total salary : Rs. " + totalSalary);
         }
     }
 }
