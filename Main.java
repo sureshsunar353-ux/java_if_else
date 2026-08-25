@@ -14,6 +14,6 @@ public class Main {
         
         Question5 eligible = new Question5();
         eligible.vote();
-        
+         
     }
 }
