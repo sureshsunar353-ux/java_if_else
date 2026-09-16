@@ -6,6 +6,8 @@
 // create a parameterized constructor to initialize all three values. 
 // create a method displayemployee() to display the employee information.
 // create three employee objects in main()
+
+                    
 import java.util.Scanner;
 class Employee{
     int id;
